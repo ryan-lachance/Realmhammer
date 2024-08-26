@@ -1,16 +1,18 @@
-import { useState } from 'react'
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { AppBar, Container, Toolbar, Typography, Button, Box } from '@mui/material'
 import './App.css'
-import Button from '@mui/material/Button'
+import AbilityPage from './pages/AbilityPage'
+
 
 function App() {
 
   return (
-    <>
-      <div>
-        <Button variant='contained'>Test</Button>
-      </div>
-    </>
+
+    <Box>
+      <AppBar sx={{ bgcolor: 'darkred', color: '' }}>
+        <Typography>RealmHammer</Typography>
+      </AppBar>
+      <AbilityPage />
+    </Box >
   )
 }
 
