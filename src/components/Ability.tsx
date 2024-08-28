@@ -16,12 +16,13 @@ function Ability({ name, declare, phase, activation, cost, effect, keywords }: A
         switch (phase) {
             case 'Deployment': return 'darkgreen'
             case 'Start': return 'black'
-            case 'Hero': return 'gold'
+            case 'Hero': return 'darkgoldenrod'
             case 'Movement': return 'grey'
-            case 'Shooting': return 'darkblue'
+            case 'Shooting': return 'navy'
             case 'Charge': return 'darkorange'
             case 'Combat': return 'darkred'
-            case 'End': return 'purple'
+            case 'End': return 'indigo'
+            case 'Passive': return 'teal'
             default: return 'black'
 
         }
