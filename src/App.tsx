@@ -1,28 +1,28 @@
-import { AppBar, Container, Toolbar, Typography, Button, Box, IconButton, Grid } from '@mui/material'
+import { Box } from '@mui/material'
 import './App.css'
 import AbilityPage from './pages/AbilityPage'
+import HomePage from './pages/HomePage'
+import NavBar from './components/NavBar'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { ArmyContext } from './Contexts/ArmyContext'
+import { useState } from 'react'
 
 
 function App() {
+  const [army, setArmy] = useState('')
   return (
+    <ArmyContext.Provider value={{ army, setArmy }}>
+      <Router>
+        <Box sx={{ padding: 5 }}>
+          <NavBar />
+          <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/abilities' element={<AbilityPage />} />
+          </Routes>
+        </Box>
+      </Router>
+    </ArmyContext.Provider>
 
-    <Box sx={{ padding: 5 }}>
-      <AppBar sx={{ bgcolor: 'darkred' }}>
-        <Toolbar>
-          <Grid container alignItems="center">
-            <Grid item xs={4} container justifyContent="flex-start">
-              <Button color="inherit">Abilities</Button>
-              <Button color="inherit">Roster</Button>
-            </Grid>
-            <Grid item xs={4} container justifyContent="center">
-              <Typography variant="h6">Realmhammer</Typography>
-            </Grid>
-            <Grid item xs={4} />
-          </Grid>
-        </Toolbar>
-      </AppBar>
-      <AbilityPage />
-    </Box>
   )
 }
 

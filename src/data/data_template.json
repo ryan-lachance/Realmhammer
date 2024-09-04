@@ -1,6 +1,7 @@
 {
     "abilities": [
         {
+            "id": 1,
             "name": "Deploy Unit",
             "phase": "Deployment",
             "activation": "",
@@ -10,6 +11,7 @@
             "keywords": "Deploy"
         },
         {
+            "id": 2,
             "name": "Deploy Faction Terrain",
             "phase": "Deployment",
             "activation": "",
@@ -19,6 +21,7 @@
             "keywords": "Deploy Terrain"
         },
         {
+            "id": 3,
             "name": "Deploy Regiment",
             "phase": "Deployment",
             "activation": "",
@@ -28,6 +31,7 @@
             "keywords": "Deploy"
         },
         {
+            "id": 4,
             "name": "Tactical Gambit",
             "phase": "Start",
             "activation": "",
@@ -37,6 +41,7 @@
             "keywords": ""
         },
         {
+            "id": 5,
             "name": "Activate Place of Power",
             "phase": "Start",
             "activation": "",
@@ -46,6 +51,7 @@
             "keywords": ""
         },
         {
+            "id": 6,
             "name": "Do Not Waver",
             "phase": "Start",
             "activation": "",
@@ -55,6 +61,7 @@
             "keywords": ""
         },
         {
+            "id": 7,
             "name": "Slay the Entourage",
             "phase": "Start",
             "activation": "",
@@ -64,6 +71,7 @@
             "keywords": ""
         },
         {
+            "id": 8,
             "name": "Attack on Two Fronts",
             "phase": "Start",
             "activation": "",
@@ -73,6 +81,7 @@
             "keywords": ""
         },
         {
+            "id": 9,
             "name": "Take Their Land",
             "phase": "Start",
             "activation": "",
@@ -82,6 +91,7 @@
             "keywords": ""
         },
         {
+            "id": 10,
             "name": "Seize The Center",
             "phase": "Start",
             "activation": "",
@@ -91,6 +101,7 @@
             "keywords": ""
         },
         {
+            "id": 11,
             "name": "Take The Flanks",
             "phase": "Start",
             "activation": "",
@@ -100,6 +111,7 @@
             "keywords": ""
         },
         {
+            "id": 12,
             "name": "Unbind",
             "phase": "Hero",
             "activation": "Reaction: Opponent declared a SPELL ability",
@@ -109,6 +121,7 @@
             "keywords": "Unbind"
         },
         {
+            "id": 13,
             "name": "Banish Manifestation",
             "phase": "Hero",
             "activation": "Your Hero Phase",
@@ -118,6 +131,7 @@
             "keywords": "Banish"
         },
         {
+            "id": 14,
             "name": "Rally",
             "phase": "Hero",
             "activation": "Any Hero Phase",
@@ -127,6 +141,7 @@
             "keywords": ""
         },
         {
+            "id": 15,
             "name": "Magical Intervention",
             "phase": "Hero",
             "activation": "Enemy Hero Phase",
@@ -136,6 +151,7 @@
             "keywords": ""
         },
         {
+            "id": 16,
             "name": "All-Out Defence",
             "phase": "Hero",
             "activation": "Reaction: Opponent declared an Attack ability",
@@ -145,6 +161,7 @@
             "keywords": ""
         },
         {
+            "id": 17,
             "name": "Normal Move",
             "phase": "Movement",
             "activation": "Your Movement Phase",
@@ -154,6 +171,7 @@
             "keywords": "Core, Move"
         },
         {
+            "id": 18,
             "name": "Run",
             "phase": "Movement",
             "activation": "Your Movement Phase",
@@ -163,6 +181,7 @@
             "keywords": "Core, Move, Run"
         },
         {
+            "id": 19,
             "name": "Retreat",
             "phase": "Movement",
             "activation": "Your Movement Phase",
@@ -172,6 +191,7 @@
             "keywords": ""
         },
         {
+            "id": 20,
             "name": "At The Double",
             "phase": "Movement",
             "activation": "Reaction: You declared a Run Ability",
@@ -181,6 +201,7 @@
             "keywords": ""
         },
         {
+            "id": 21,
             "name": "Redeploy",
             "phase": "Movement",
             "activation": "Enemy Movement Phase",
@@ -190,6 +211,7 @@
             "keywords": "Move, Run"
         },
         {
+            "id": 22,
             "name": "Shoot",
             "phase": "Shooting",
             "activation": "Your Shooting Phase",
@@ -199,6 +221,7 @@
             "keywords": "Core, Attack, Shoot"
         },
         {
+            "id": 23,
             "name": "Covering Fire",
             "phase": "Shooting",
             "activation": "Enemy Shooting Phase",
@@ -208,6 +231,7 @@
             "keywords": "Attack, Shoot"
         },
         {
+            "id": 24,
             "name": "All-Out Defence",
             "phase": "Shooting",
             "activation": "Reaction: Opponent declared an Attack ability",
@@ -217,6 +241,7 @@
             "keywords": ""
         },
         {
+            "id": 25,
             "name": "Charge",
             "phase": "Charge",
             "activation": "Your Charge Phase",
@@ -226,6 +251,7 @@
             "keywords": "Core, Move, Charge"
         },
         {
+            "id": 26,
             "name": "Forward To Victory",
             "phase": "Charge",
             "activation": "Reaction: You declared a Charge Ability",
@@ -235,6 +261,7 @@
             "keywords": ""
         },
         {
+            "id": 27,
             "name": "Counter-Charge",
             "phase": "Charge",
             "activation": "Enemy Charge Phase",
@@ -244,6 +271,7 @@
             "keywords": ""
         },
         {
+            "id": 28,
             "name": "Fight",
             "phase": "Combat",
             "activation": "Any Combat Phase",
@@ -253,6 +281,7 @@
             "keywords": "Core, Attack, Fight"
         },
         {
+            "id": 29,
             "name": "All-Out Attack",
             "phase": "Combat",
             "activation": "Reaction: You declared an Attack ability",
@@ -262,6 +291,7 @@
             "keywords": ""
         },
         {
+            "id": 30,
             "name": "All-Out Defence",
             "phase": "Combat",
             "activation": "Reaction: Opponent declared an Attack ability",
@@ -271,6 +301,7 @@
             "keywords": ""
         },
         {
+            "id": 31,
             "name": "Power Through",
             "phase": "End",
             "activation": "End of Any Turn",
@@ -278,6 +309,56 @@
             "declare": "Pick a friendly unit that charged this turn to use this ability, then you must pick an enemy unit in combat with it to be the target. The target must have a lower Health characteristic than the unit using this ability. ",
             "effect": "Inflict D3 mortal damage on the target. Then, the unit using this ability can move a distance up to its Move characteristic. It can pass through and end that move within the combat ranges of enemy units that were in combat with it at the start of the move, but not those of other enemy units. It does not have to end the move in combat.",
             "keywords": "Move"
+        },
+        {
+            "id": 32,
+            "name": "Musician",
+            "phase": "Passive",
+            "activation": "",
+            "cost": "",
+            "declare": "",
+            "effect": "While this unit contains any musicians, if it uses the ‘Rally’ command, you can make one additional rally roll of D6.",
+            "keywords": ""
+        },
+        {
+            "id": 33,
+            "name": "Ward Save",
+            "phase": "Passive",
+            "activation": "",
+            "cost": "",
+            "declare": "",
+            "effect": " In step 1 of the damage sequence (see 18.0), make a ward roll of D6 for each damage point in this unit’s damage pool. If the roll equals or exceeds this unit’s ward value, remove that damage point from the damage pool.",
+            "keywords": ""
+        },
+        {
+            "id": 34,
+            "name": "Guarded Hero",
+            "phase": "Passive",
+            "activation": "",
+            "cost": "",
+            "declare": "",
+            "effect": "If this Hero is within the combat range of a friendly unit that is not a Hero: Subtract 1 from hit rolls for shooting attacks that target this Hero. If this Hero is Infantry, they cannot be picked as the target of shooting attacks made by units more than 12 inches from them.",
+            "keywords": ""
+        },
+        {
+            "id": 35,
+            "name": "Champion",
+            "phase": "Passive",
+            "activation": "",
+            "cost": "",
+            "declare": "",
+            "effect": "Add 1 to the Attacks characteristic of weapons used by champions in this unit.",
+            "keywords": ""
+        },
+        {
+            "id": 36,
+            "name": "Standard Bearer",
+            "phase": "Passive",
+            "activation": "",
+            "cost": "",
+            "declare": "",
+            "effect": "While this unit contains any standard bearers, add 1 to this unit’s control score.",
+            "keywords": ""
         }
     ]
 }
