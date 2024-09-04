@@ -3,20 +3,20 @@ import { ArmyContext } from "../Contexts/ArmyContext";
 import { useContext } from "react";
 
 function HomePage() {
-
-    const { setArmy } = useContext(ArmyContext)
+    const { setArmy } = useContext(ArmyContext);
 
     return (
-
         <div>
             <h1>Local Storage Keys</h1>
             <ul>
                 {Object.keys(localStorage).map((key) => (
-                    <Button>{key}</Button>
+                    <Button key={key} onClick={() => setArmy(key)}>
+                        {key}
+                    </Button>
                 ))}
             </ul>
         </div>
     );
-};
+}
 
-export default HomePage
+export default HomePage;
