@@ -18,29 +18,49 @@ interface AbilityInterface {
     effect: string;
     keywords: string;
 }
+interface UnitInterface {
+    id: number;
+    name: string;
+    move: number;
+    health: number;
+    control: number;
+    save: number;
+    weapons: WeaponInterface[];
+    keywords: string;
+}
+interface WeaponInterface {
+    id: number;
+    attacks: number
+    hit: number
+    wound: number
+    rend: number
+    damage: number
+    ability: string
+}
+
 
 function AbilityPage() {
     const [currentTab, setTab] = useState(0);
     const [abilities, setAbilities] = useState<AbilityInterface[]>([]);
+    const [roster, setRoster] = useState<UnitInterface[]>([]);
     const [name, setName] = useState<string>('');
     const { army } = useContext(ArmyContext);
 
     useEffect(() => {
         // Fetch abilities data from JSON file
+        setName(army);
         const storedData = localStorage.getItem(army);
         if (storedData != null) {
             const parsedData = JSON.parse(storedData);
             setAbilities(parsedData.abilities);
+            setRoster(parsedData.roster);
         } else {
             setAbilities(defaultData.abilities);
+            setRoster(defaultData.roster);
+
         }
         console.log(`Army state updated: ${army}`);
     }, [army]); // Add `army` as a dependency
-
-    useEffect(() => {
-        // Set the TextField content to the army name when the component loads
-        setName(army);
-    }, [army]);
 
     const rename = (_event: ChangeEvent<HTMLInputElement>) => {
         setName(_event.target.value);
@@ -64,7 +84,7 @@ function AbilityPage() {
 
         const updatedAbilities = [...abilities, newAbility];
         setAbilities(updatedAbilities);
-        const updatedData = { abilities: updatedAbilities };
+        const updatedData = { abilities: updatedAbilities, roster: roster };
         localStorage.setItem(name, JSON.stringify(updatedData));
         console.log('Ability added:', newAbility);
     }

@@ -360,5 +360,27 @@
             "effect": "While this unit contains any standard bearers, add 1 to this unit’s control score.",
             "keywords": ""
         }
+    ],
+    "roster": [
+        {
+            "id": 1,
+            "name": "Test Dummy",
+            "move": 4,
+            "health": 2,
+            "control": 1,
+            "save": 3,
+            "weapons": [
+                {
+                    "id": 1,
+                    "attacks": 2,
+                    "hit": 4,
+                    "wound": 3,
+                    "rend": 1,
+                    "damage": 1,
+                    "ability": "Some ability"
+                }
+            ],
+            "keywords": "Infantry, Champion, Standard Bearer(1/10), Destruction, Ironjawz"
+        }
     ]
 }

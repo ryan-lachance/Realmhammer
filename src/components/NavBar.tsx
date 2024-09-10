@@ -11,6 +11,9 @@ function NavBar() {
         navigate('/abilities');
     };
 
+    const navRoster = () => {
+        navigate('/roster');
+    };
     return (
 
         <AppBar sx={{ bgcolor: 'darkred' }}>
@@ -19,7 +22,7 @@ function NavBar() {
                     <Grid item xs={4} container justifyContent="flex-start">
                         <Button onClick={navHome} color="inherit">Home</Button>
                         <Button onClick={navAbilities} color="inherit">Abilities</Button>
-                        <Button onClick={navAbilities} color="inherit">Roster</Button>
+                        <Button onClick={navRoster} color="inherit">Roster</Button>
                     </Grid>
                     <Grid item xs={4} container justifyContent="center">
                         <Typography variant="h6">Realmhammer</Typography>
